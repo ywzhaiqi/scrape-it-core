@@ -37,9 +37,9 @@
 
 
 
+## New
 
-
-
+- build one file `index.global.js`, work on browser
 
 
 

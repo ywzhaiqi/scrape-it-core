@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/cheerio': ^0.22.31
   cheerio: ^1.0.0-rc.5
   err: ^2.1.12
   esbuild: ^0.14.38
@@ -10,6 +11,7 @@ specifiers:
   typpy: ^2.3.13
 
 dependencies:
+  '@types/cheerio': 0.22.31
   cheerio: 1.0.0-rc.10
   err: 2.1.12
   esbuild: 0.14.38
@@ -19,6 +21,16 @@ dependencies:
   typpy: 2.3.13
 
 packages:
+
+  /@types/cheerio/0.22.31:
+    resolution: {integrity: sha512-Kt7Cdjjdi2XWSfrZ53v4Of0wG3ZcmaegFXjMmz9tfNrZSkzzo36G0AL1YqSdcIA78Etjt6E609pt5h1xnQkPUw==}
+    dependencies:
+      '@types/node': 17.0.31
+    dev: false
+
+  /@types/node/17.0.31:
+    resolution: {integrity: sha512-AR0x5HbXGqkEx9CadRH3EBYx/VkiUgZIhP4wvPn/+5KIsgpNoyFaRlVe0Zlx9gRtg8fA06a9tskE2MSN7TcG4Q==}
+    dev: false
 
   /barbe/3.0.16:
     resolution: {integrity: sha512-WSJbowJ8dUfDUSWSZzJDD2BP+xwbLdGPbZMStzgUX8UDSS2stPLvi9pwCIsU9k8RXU6x56nIJzJYSfFct3C1+Q==}

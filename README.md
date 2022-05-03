@@ -39,9 +39,9 @@
 
 ## New
 
-- build one file `index.global.js`, work on browser
+- build one file `scrapeHTML.global.js`, work on browser
 
-after Add `https://unpkg.com/@ywzhaiqi/scrape-it-core/dist/index.global.js`
+after Add `https://unpkg.com/@ywzhaiqi/scrape-it-core/dist/scrapeHTML.global.js`
 
 ```js
 // Promise interface

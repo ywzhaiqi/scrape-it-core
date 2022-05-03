@@ -11,10 +11,11 @@
     "of"
   ],
   "license": "MIT",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "esbuild lib/index.js --bundle --format=iife --minify --global-name=scrapeHTML --outfile=dist/index.global.js",
+    "build": "esbuild lib/index.js --bundle --format=iife --minify --global-name=scrapeHTML --outfile=dist/scrapeHTML.global.js",
     "mpublish": "npm publish --access=public"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
@@ -42,6 +43,7 @@
     "url": "https://github.com/IonicaBizau/scrape-it-core/issues"
   },
   "dependencies": {
+    "@types/cheerio": "^0.22.31",
     "cheerio": "^1.0.0-rc.5",
     "err": "^2.1.12",
     "esbuild": "^0.14.38",

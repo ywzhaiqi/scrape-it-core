@@ -41,10 +41,19 @@
 
 - build one file `scrapeHTML.global.js`, work on browser
 
+### scrapeHTML lite
+
+after Add `https://unpkg.com/@ywzhaiqi/scrape-it-core/dist/scrapeHTML-lite.global.js`
+
+```js
+const data = scrapeHTML($('body'), { title: '.heading' ...})
+```
+
+### scrapeHTML full
+
 after Add `https://unpkg.com/@ywzhaiqi/scrape-it-core/dist/scrapeHTML.global.js`
 
 ```js
-// Promise interface
 const data = scrapeHTML(`
     <h1 class='heading'>Hello World</h1>
     <img src="test.jpg" />

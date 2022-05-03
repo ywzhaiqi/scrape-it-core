@@ -1,4 +1,5 @@
 /// <reference types="cheerio" />
+/// <reference types="jquery" />
 
 export interface ScrapeOptions {
   [key: string]: string | ScrapeOptionList | ScrapeOptionElement;
@@ -22,6 +23,6 @@ export interface ScrapeOptionList {
 }
 
 export default function scrapeHTML<T>(
-  body: cheerio.Root | string,
+  body: string | cheerio.Root | JQuery<HTMLElement>,
   options: ScrapeOptions
 ): T;

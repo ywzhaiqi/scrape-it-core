@@ -11,11 +11,13 @@
     "of"
   ],
   "license": "MIT",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "esbuild lib/index.js --bundle --format=iife --minify --global-name=scrapeHTML --outfile=dist/scrapeHTML.global.js",
+    "build:lite": "node lite-esbuild.config.js",
+    "build:types": "tsc --emitDeclarationOnly --outDir dist",
     "mpublish": "npm publish --access=public"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
@@ -44,6 +46,7 @@
   },
   "dependencies": {
     "@types/cheerio": "^0.22.31",
+    "@types/jquery": "^3.5.14",
     "cheerio": "^1.0.0-rc.5",
     "err": "^2.1.12",
     "esbuild": "^0.14.38",
